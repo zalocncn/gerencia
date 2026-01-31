@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios | Outsourcing - GERENCIA.COM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F4F4F4] text-[#0E0F12] antialiased selection:bg-[#F35A1F] selection:text-white">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#0E0F12]/10 h-20 flex items-center">
+      <div class="max-w-7xl mx-auto w-full px-6 md:px-12 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="text-xl font-semibold tracking-tight">GERENCIA.COM</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-[13px] font-medium tracking-wide text-[#3D3F46]">
+          <a href="index.html" class="hover:text-[#F35A1F] transition-colors">INICIO</a>
+                    <a href="gear.html" class="hover:text-[#F35A1F] transition-colors">GEAR</a>
+          <a href="servicios-outsourcing.html" class="text-[#F35A1F] transition-colors relative" aria-current="page">
+            SERVICIOS
+            <span class="absolute -bottom-2 left-0 w-full h-px bg-[#F35A1F]/60"></span>
+          </a>
+          <a href="blog.html" class="hover:text-[#F35A1F] transition-colors">BLOG</a>
+          <a href="postula.html" class="hover:text-[#F35A1F] transition-colors">POSTULA AQUÍ</a>
+        </div>
+
+        <a
+          href="contacto.html"
+          class="bg-[#F35A1F] hover:bg-[#FF7A3C] text-white text-[13px] font-medium px-6 py-2.5 rounded-full shadow-[0_6px_18px_rgba(243,90,31,0.25)] transition-all transform hover:-translate-y-0.5 active:scale-95"
+        >
+          CONTÁCTANOS
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="relative w-full bg-[#0B0B0D] overflow-hidden rounded-b-[32px] mx-auto md:w-[98%] mt-2">
+      <div class="relative h-[440px] md:h-[520px]">
+        <img
+          src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2400&auto=format&fit=crop"
+          class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-luminosity"
+          alt="Servicios"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#0B0B0D]/25 to-[#0B0B0D]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_55%_35%,rgba(243,90,31,0.45)_0%,rgba(0,0,0,0)_60%)]"></div>
+
+        <div class="relative z-10 h-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col justify-center">
+          <span class="text-[#F35A1F] font-medium tracking-widest text-xs uppercase mb-6 border border-[#F35A1F]/30 bg-[#F35A1F]/10 px-3 py-1 w-fit rounded-full">
+            SERVICIOS
+          </span>
+
+          <h1 class="text-white text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05]">
+            OUTSOURCING
+          </h1>
+          <p class="mt-4 text-white/70 text-[15px] md:text-[16px] tracking-wide uppercase">
+            TERCIARIZACIÓN CONTABLE
+          </p>
+
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a
+              href="https://gerenciasac.com/wp-content/uploads/2024/10/brochure-2024-gerenciasac.pdf"
+              class="inline-flex items-center gap-2 group bg-gradient-to-br from-[#D94816] via-[#F35A1F] to-[#FF7A3C] text-white px-8 py-3.5 rounded-full text-[15px] font-medium shadow-[0_0_24px_rgba(243,90,31,0.4)] hover:shadow-[0_0_32px_rgba(243,90,31,0.6)] transition-all"
+              target="_blank"
+              rel="noreferrer"
+            >
+              DESCARGAR BROCHURE
+              <i data-lucide="download" class="w-4 h-4 transition-transform group-hover:translate-y-0.5"></i>
+            </a>
+
+            <a
+              href="contacto.html"
+              class="inline-flex items-center gap-2 border border-white/15 text-white/90 hover:text-white hover:border-[#F35A1F]/60 px-8 py-3.5 rounded-full text-[15px] font-medium transition-colors"
+            >
+              CONTACTAR
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="py-28 max-w-7xl mx-auto px-6 md:px-12">
+      <div class="flex items-end justify-between mb-12 border-b border-[#0E0F12]/5 pb-6">
+        <div>
+          <span class="text-[#F35A1F] text-xs font-bold tracking-widest uppercase block mb-1">SERVICIOS</span>
+          <h2 class="text-3xl md:text-4xl font-semibold tracking-tighter text-[#0E0F12]">OUTSOURCING</h2>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Outsourcing Contable -->
+        <article class="group bg-white rounded-2xl border border-[#0E0F12]/5 p-8 shadow-[0_10px_28px_rgba(0,0,0,0.06)] hover:shadow-[0_18px_42px_rgba(0,0,0,0.12)] transition-all duration-300">
+          <div class="w-14 h-14 bg-[#F35A1F]/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#F35A1F] transition-colors duration-300">
+            <i data-lucide="calculator" class="w-7 h-7 text-[#F35A1F] group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="text-lg font-semibold tracking-tight text-[#0E0F12]">Outsourcing Contable</h3>
+          <p class="mt-4 text-[14px] text-[#6E717C] leading-relaxed">
+            Ofrecemos un servicio de alta calidad que se basa en la tercerización de un servicio en específico de su empresa, orientado en la optimización de sus recursos en función de las normas legales vigentes.
+          </p>
+        </article>
+
+        <!-- Outsourcing Administrativo -->
+        <article class="group bg-white rounded-2xl border border-[#0E0F12]/5 p-8 shadow-[0_10px_28px_rgba(0,0,0,0.06)] hover:shadow-[0_18px_42px_rgba(0,0,0,0.12)] transition-all duration-300">
+          <div class="w-14 h-14 bg-[#F35A1F]/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#F35A1F] transition-colors duration-300">
+            <i data-lucide="clipboard-list" class="w-7 h-7 text-[#F35A1F] group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="text-lg font-semibold tracking-tight text-[#0E0F12]">Outsourcing Administrativo</h3>
+          <p class="mt-4 text-[14px] text-[#6E717C] leading-relaxed">
+            Ofrecemos el servicio de reducir el número de tareas rutinarias y operativas de nuestros clientes tales como facturación, programación de pagos, cobranza y gestión de inventarios, permitiéndoles visualizar, reducir y controlar los costos relacionados a sus unidades de apoyo.
+          </p>
+        </article>
+
+        <!-- Outsourcing de Planillas -->
+        <article class="group bg-white rounded-2xl border border-[#0E0F12]/5 p-8 shadow-[0_10px_28px_rgba(0,0,0,0.06)] hover:shadow-[0_18px_42px_rgba(0,0,0,0.12)] transition-all duration-300">
+          <div class="w-14 h-14 bg-[#F35A1F]/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#F35A1F] transition-colors duration-300">
+            <i data-lucide="users" class="w-7 h-7 text-[#F35A1F] group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="text-lg font-semibold tracking-tight text-[#0E0F12]">Outsourcing de Planillas</h3>
+          <p class="mt-4 text-[14px] text-[#6E717C] leading-relaxed">
+            Ofrecemos el servicio de gestionar eficientemente el salario de los empleados de nuestros clientes en cumplimiento de las leyes laborales vigentes, con la estructura salarial más conveniente según su negocio y en estricta confidencialidad lo que logra mantener eficiente clima laboral.
+          </p>
+        </article>
+      </div>
+
+      <div class="mt-14 flex flex-wrap gap-4">
+        <a
+          href="https://gerenciasac.com/wp-content/uploads/2024/10/brochure-2024-gerenciasac.pdf"
+          class="inline-flex items-center gap-2 bg-[#0E0F12] text-white hover:bg-[#F35A1F] px-8 py-3 rounded-full text-[14px] font-medium transition-colors duration-300"
+          target="_blank"
+          rel="noreferrer"
+        >
+          DESCARGAR BROCHURE
+          <i data-lucide="download" class="w-4 h-4"></i>
+        </a>
+        <a
+          href="contacto.html"
+          class="inline-flex items-center gap-2 border border-[#0E0F12]/10 text-[#0E0F12] hover:border-[#F35A1F] hover:text-[#F35A1F] px-8 py-3 rounded-full text-[14px] font-medium transition-colors"
+        >
+          CONTACTAR
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </main>
+
+    <!-- Contact strip (mirrors original site info, styled like home) -->
+    <section class="bg-[#0B0B0D] text-white py-16 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-3 gap-8">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
+            <i data-lucide="phone" class="text-[#F35A1F] w-5 h-5"></i>
+          </div>
+          <div>
+            <p class="text-sm text-white/40 uppercase tracking-wide">LLÁMANOS</p>
+            <p class="font-medium">044 612019</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
+            <i data-lucide="message-circle" class="text-[#F35A1F] w-5 h-5"></i>
+          </div>
+          <div>
+            <p class="text-sm text-white/40 uppercase tracking-wide">CONSÚLTANOS</p>
+            <p class="font-medium">965353315</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
+            <i data-lucide="map-pin" class="text-[#F35A1F] w-5 h-5"></i>
+          </div>
+          <div>
+            <p class="text-sm text-white/40 uppercase tracking-wide">VISÍTANOS</p>
+            <p class="font-medium">Av. Teodoro Valcárcel 777 Urb. Primavera, Trujillo – Perú</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0B0B0D] text-white pt-16 pb-12 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p class="text-sm text-white/40">© 2026 GERENCIA.COM. Todos los Derechos Reservados</p>
+
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-white/40 uppercase tracking-wider">Desarrollado por</span>
+            <div class="w-6 h-6 bg-[#F35A1F] rounded-sm flex items-center justify-center text-[10px] font-bold">E</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
+
