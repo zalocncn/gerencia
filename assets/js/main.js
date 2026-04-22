@@ -2,13 +2,26 @@
 (function () {
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
-  if (toggle && links) {
-    toggle.addEventListener('click', () => {
-      const open = links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
-  }
+  if (!toggle || !links) return;
+
+  const close = () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
+  };
+  const open = () => {
+    links.classList.add('open');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('nav-open');
+  };
+
+  toggle.addEventListener('click', () => {
+    links.classList.contains('open') ? close() : open();
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  // Close if user resizes back to desktop
+  window.addEventListener('resize', () => { if (window.innerWidth > 900) close(); });
 })();
 
 /* Animated counters */
