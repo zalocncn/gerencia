@@ -241,25 +241,25 @@ section { padding: var(--space-9) 0; }
     #fff;
   overflow: hidden;
 }
-.hero-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: var(--space-8); align-items: center; }
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: stretch; }
 @media (max-width: 960px) { .hero-grid { grid-template-columns: 1fr; gap: var(--space-7); align-items: center; } }
 .hero h1 { margin-top: 14px; }
 .hero h1 span { color: var(--brand); }
 .hero p.lead { font-size: 1.15rem; margin: 20px 0 28px; max-width: 580px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-.hero-media { position: relative; display: flex; }
+.hero-media { position: relative; display: flex; min-height: 480px; }
 .hero-media img {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 10;
+  height: 100%;
   image-rendering: auto;
 }
 @media (max-width: 960px) {
-  .hero-media img { aspect-ratio: 16 / 10; }
+  .hero-media { min-height: 0; }
+  .hero-media img { aspect-ratio: 16 / 10; height: auto; }
 }
 .hero-badge {
   position: absolute;
