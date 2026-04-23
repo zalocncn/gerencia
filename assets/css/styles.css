@@ -122,7 +122,7 @@ section { padding: var(--space-9) 0; }
 .topbar a:hover { color: #fff; }
 .topbar-contact { display: flex; gap: 18px; flex-wrap: wrap; }
 .topbar-contact span, .topbar-contact a { display: inline-flex; align-items: center; gap: 6px; }
-.topbar-social { display: flex; gap: 12px; }
+.topbar-social { display: flex; gap: 12px; order: -1; }
 .topbar-social a svg { width: 16px; height: 16px; display: block; }
 @media (max-width: 640px) { .topbar { display: none; } }
 
