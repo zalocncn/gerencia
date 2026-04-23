@@ -20,8 +20,6 @@
   });
   links.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
-  // Close if user resizes back to desktop
-  window.addEventListener('resize', () => { if (window.innerWidth > 900) close(); });
 })();
 
 /* Animated counters */
